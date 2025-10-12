@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./cryptDevices.nix # created when copyHwConfig_helios.sh is ran
+      ./power.nix # power hacks to make sleep/shutdown play nicer
     ];
 
   # Enable flakes
@@ -48,9 +49,6 @@
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
-
-  # enable advanced power handling daemon (hopefully help shutdown/suspend oddness)
-  services.acpid.enable = true;
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
