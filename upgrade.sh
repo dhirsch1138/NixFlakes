@@ -1,2 +1,3 @@
-echo upgrading $(hostname) as flake
-sudo nixos-rebuild switch --flake ./#$(hostname)
+hs=$(hostname)
+echo upgrading $hs as flake
+sudo nixos-rebuild switch --flake ./#$hs

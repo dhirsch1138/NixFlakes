@@ -18,7 +18,7 @@
           inherit system;
         };
         modules = [
-        ./helios/configuration.nix
+        ./hosts/helios/configuration.nix
         ];
       };
     };

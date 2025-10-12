@@ -1,5 +1,5 @@
 # do install
 # clone this down to a folder
-# run copyHwConfig_helios.sh
+# run initialSetup.sh
 # run update.sh
 # run upgrade_helios.sh
