@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./manual_cryptDevices.nix
+      ./cryptDevices.nix # created when copyHwConfig_helios.sh is ran
     ];
 
   # Enable flakes
@@ -17,11 +17,6 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-
-  # moved to manual_CryptDevices.nix
-  # !!! THIS MUST BE UPDATED ON DIFFERENT VOLUME (INCLUDING REFORMAT/REINSTALL)
-  #boot.initrd.luks.devices."luks-cb2145ab-86ad-442c-a25a-c9b4cd20e52c".device = "/dev/disk/by-uuid/cb2145ab-86ad-442c-a25a-c9b4cd20e52c";
 
   networking.hostName = "helios"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
