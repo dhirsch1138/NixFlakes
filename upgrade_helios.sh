@@ -1,1 +1,1 @@
-nixos-rebuild switch --flake ./#helios
+sudo nixos-rebuild switch --flake ./#helios
