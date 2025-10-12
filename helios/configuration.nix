@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./manual_CryptDevices.nix
+      ./manual_cryptDevices.nix
     ];
 
   # Enable flakes
