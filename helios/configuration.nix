@@ -17,7 +17,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.initrd.luks.devices."luks-ac176236-45e8-4ead-945b-6620a8362de4".device = "/dev/disk/by-uuid/ac176236-45e8-4ead-945b-6620a8362de4";
+
+  # !!! THIS MUST BE UPDATED ON DIFFERENT VOLUME (INCLUDING REFORMAT/REINSTALL)
+  boot.initrd.luks.devices."luks-cb2145ab-86ad-442c-a25a-c9b4cd20e52c".device = "/dev/disk/by-uuid/cb2145ab-86ad-442c-a25a-c9b4cd20e52c";
+
   networking.hostName = "helios"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -123,7 +126,6 @@
   #  wget
     bat
     git
-    home-manager
     vim
   ];
 
