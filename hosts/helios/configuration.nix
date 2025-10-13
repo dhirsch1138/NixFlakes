@@ -93,11 +93,11 @@
     description = "David Hirsch";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      ffmpeg-full
-      gimp-with-plugins
-      kdePackages.kate
-      kphotoalbum
-      vorta # borgbackup
+    #  ffmpeg-full
+    #  gimp-with-plugins
+    #  kdePackages.kate
+    #  kphotoalbum
+    #  vorta # borgbackup
     #  thunderbird
     ];
   };

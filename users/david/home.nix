@@ -6,6 +6,21 @@
   home.username = "david";
   home.homeDirectory = "/home/david";
 
+  programs.git = {
+    enable = true;
+    userName = "David Hirsch";
+    userEmail = "dhirsch1138@gmail.com";
+  };
+
+  home.packages = with pkgs; [
+      ffmpeg-full
+      gimp-with-plugins
+      kdePackages.kate
+      kphotoalbum
+      vorta # borgbackup
+    #  thunderbird
+  ];
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
