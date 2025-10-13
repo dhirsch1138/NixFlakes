@@ -93,21 +93,18 @@
     description = "David Hirsch";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    #  ffmpeg-full
-    #  gimp-with-plugins
-    #  kdePackages.kate
-    #  kphotoalbum
-    #  vorta # borgbackup
-    #  thunderbird
+    # these are defined in ./users/david/home.nix
     ];
   };
 
   # Install firefox.
-  programs.firefox.enable = true;
+  # programs.firefox.enable = true; # installed in home.nix
 
+  # Steam enabled in home.nix
+  # Tip: For improved gaming performance, you can also enable GameMode:
+  # programs.gamemode.enable = true;
 
-# Tip: For improved gaming performance, you can also enable GameMode:
-# programs.gamemode.enable = true;
+  programs.fish.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
