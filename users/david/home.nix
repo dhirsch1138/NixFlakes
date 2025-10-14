@@ -17,8 +17,6 @@
   programs.fish = {
     enable = true;
     shellAliases = {
-      nix-update = "~/nixos/update.sh";
-      nix-switch = "~/nixos/upgrade.sh";
     };
   };
 
