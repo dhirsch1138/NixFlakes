@@ -1,4 +1,2 @@
-workingCd=$(pwd)
-cd ~/nixos
+echo updating flake.nix in $(pwd)
 nix flake update
-cd $workingCd
