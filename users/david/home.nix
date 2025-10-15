@@ -39,6 +39,7 @@
       gimp-with-plugins
       kdePackages.kate
       kphotoalbum
+      lutris
       vorta # borgbackup
     #  thunderbird
   ];
