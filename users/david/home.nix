@@ -39,14 +39,14 @@
 
   home.packages = with pkgs; [
       banner
-      ffmpeg-full
+      ffmpeg-full #get codecs for firefox video hardware acceleration
       gimp-with-plugins
       catppuccin-kde #theme
       kdePackages.kate
       kphotoalbum
       lolcat
-      lutris
-      nordic #theme
+      lutris #game launcher
+      openmw #run morrowind
       vorta # borgbackup
     #  thunderbird
   ];
