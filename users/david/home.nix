@@ -16,6 +16,9 @@
 
   programs.fish = {
     enable = true;
+    interactiveShellInit =
+      "banner hello! | lolcat
+      set -g fish_greeting";
     shellAliases = {
     };
   };
@@ -35,11 +38,15 @@
   };
 
   home.packages = with pkgs; [
+      banner
       ffmpeg-full
       gimp-with-plugins
+      catppuccin-kde #theme
       kdePackages.kate
       kphotoalbum
+      lolcat
       lutris
+      nordic #theme
       vorta # borgbackup
     #  thunderbird
   ];
