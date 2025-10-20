@@ -46,6 +46,7 @@
       kphotoalbum
       lolcat
       lutris #game launcher
+      nil # NIx Language server, an incremental analysis assistant for writing in Nix.
       openmw #run morrowind
       vorta # borgbackup
     #  thunderbird
