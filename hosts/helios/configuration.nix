@@ -10,7 +10,7 @@
       ./hardware-configuration.nix
       ./cryptDevices.nix # created when copyHwConfig_helios.sh is ran
       ./power.nix # power hacks to make sleep/shutdown play nicer
-      ./steam.nix
+      ../shared/steam.nix
     ];
 
   # Enable flakes
