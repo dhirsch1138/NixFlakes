@@ -91,16 +91,9 @@
     description = "David Hirsch";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    # these are defined in ./users/david/home.nix
+    # packages should be defined in home manager
     ];
   };
-
-  # Install firefox.
-  # programs.firefox.enable = true; # installed in home.nix
-
-  # Steam enabled in home.nix
-  # Tip: For improved gaming performance, you can also enable GameMode:
-  # programs.gamemode.enable = true;
 
   programs.fish.enable = true;
 
@@ -116,19 +109,6 @@
     git
     vim
   ];
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
