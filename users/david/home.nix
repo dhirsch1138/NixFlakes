@@ -6,11 +6,9 @@
   home.username = "david";
   home.homeDirectory = "/home/david";
 
-  programs.git = {
-    enable = true;
-    userName = "David Hirsch";
-    userEmail = "dhirsch1138@gmail.com";
-  };
+  imports = [
+      ./david_git.nix
+  ];
 
   programs.firefox.enable = true;
 
