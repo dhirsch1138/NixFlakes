@@ -1,8 +1,7 @@
 hs=$(hostname)
 nix-shell -p banner lolcat --run "banner NIX Update! | lolcat"
 echo updating flake.nix in $(pwd)
-echo Sleeping for 10 seconds, Control+C to abort.
-sleep 10
+nix shell nixpkgs#gum --command sh -c "gum spin --spinner dot --title \"Waiting five seconds... (control+c to abort)\" -- sleep 5"
 echo -----------
 echo calling "nix flake update"
 nix flake update
