@@ -46,6 +46,8 @@
       lutris #game launcher
       nil # NIx Language server, an incremental analysis assistant for writing in Nix.
       openmw #run morrowind
+      qemu # virtual machine backend
+      quickemu # tui tool for qemu , see qemu shell script I'm gonna add
       vorta # borgbackup
     #  thunderbird
   ];
